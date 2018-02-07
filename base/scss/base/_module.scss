@@ -1,0 +1,29 @@
+@import 'reset';
+@import 'typography';
+@import '../abstracts/variables';
+
+body{
+    background-color: white;
+}
+
+a {
+    color: $font-color-anchor;
+    cursor: pointer;
+    &:hover {
+      text-decoration: $font-color-anchor;
+      cursor: pointer;
+    }
+  }
+
+  // Active icon color in list nav
+mat-nav-list, mat-list {
+    [mat-list-item].active {
+        mat-icon[matListAvatar] {
+            background-color: mat-color($accent);
+            color: mat-color($accent, default-contrast);
+        }
+        mat-icon[matListIcon] {
+            color: mat-color($accent);
+        }
+    }
+}

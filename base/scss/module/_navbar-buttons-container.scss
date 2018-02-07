@@ -1,0 +1,8 @@
+.navbar-button-container{
+    &__button{
+        &.mat-button{
+            border-radius: 5px;
+            border: solid 1px;
+        }
+    }
+}

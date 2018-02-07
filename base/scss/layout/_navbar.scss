@@ -1,0 +1,28 @@
+// Search bar Styles
+.search-bar {
+    max-height: 40px; // Style Inside Search bar
+    &>div.td-search-box {
+        max-height: 40px; // Set input element
+        .mat-input-element {
+            margin-top: 8px;
+        } // Set Label element
+        .mat-form-field-label-wrapper {
+            margin-top: 8px;
+        }
+    }
+}
+
+// Admin Layout Top Navbar
+.admin-navbar {
+    &>.td-layout-nav-wrapper {
+        &>mat-toolbar:first-child {
+            // Make Sure Top Navbar not in same level with sub navbars
+            z-index: 2;
+        }
+    }
+}
+
+// Set Sub Navbar Styles.
+.second-navbar{
+    min-height: 64px;
+}
