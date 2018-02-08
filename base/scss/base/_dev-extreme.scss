@@ -1,0 +1,7 @@
+.dx-texteditor {
+    // Make Dx Text Editor to have curved looks...
+    border-radius: 30px;
+    & .dx-texteditor-input {
+        border-radius: 30px;
+    }
+}

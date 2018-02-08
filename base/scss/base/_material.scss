@@ -1,0 +1,36 @@
+// Active icon color in list nav
+mat-nav-list,
+mat-list {
+    [mat-list-item].active {
+        mat-icon[matListAvatar] {
+            background-color: mat-color($accent);
+            color: mat-color($accent, default-contrast);
+        }
+        mat-icon[matListIcon] {
+            color: mat-color($accent);
+        }
+    }
+}
+
+mat-card-title {
+    &:hover {
+        cursor: grab;
+        cursor: -moz-grab;
+        cursor: -webkit-grab;
+    }
+    &:active {
+        cursor: grabbing;
+        cursor: -moz-grabbing;
+        cursor: -webkit-grabbing;
+    }
+}
+
+// Make All Buttons Curved Looks.
+.mat-button {
+    border: 1px solid !important;
+    border-radius: 30px !important;
+}
+
+.mat-card {
+    border-radius: 10px !important;
+}

@@ -1,0 +1,13 @@
+body{
+    background-color: white;
+}
+
+a {
+    color: $font-color-anchor;
+    cursor: pointer;
+    &:hover {
+      text-decoration: $font-color-anchor;
+      cursor: pointer;
+    }
+  }
+
